@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pergunta, PerguntaAberta } from './pergunta/pergunta.component';
+import { Pergunta, PerguntaAberta, PerguntaMultiplaEscolha } from './pergunta/pergunta.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +20,14 @@ export class AppComponent {
   public perguntaSelecionada: Pergunta;
   
   public onSelectPergunta(): void {
-    this.perguntaSelecionada = new PerguntaAberta("Quem o sobrenome do Harry?");
+    if (Math.random() < 0.5)
+      this.perguntaSelecionada = new PerguntaAberta("Qual é o sobrenome do Harry?");
+    else
+      this.perguntaSelecionada = new PerguntaMultiplaEscolha("Qual objeto um bruxo utiliza para voar?", [
+        "Tapete",
+        "Vassoura",
+        "A nuvem do Goku",
+        "Avião"
+      ]);
   }
 }
