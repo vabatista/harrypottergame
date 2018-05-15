@@ -3,7 +3,6 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'pergunta',
   template: `
-    -{{pergunta?.tipo}}-
     <div [ngSwitch]="pergunta?.tipo">
       <pergunta-aberta *ngSwitchCase="'aberta'" [pergunta]="pergunta"></pergunta-aberta>
       <pergunta-multipla-escolha *ngSwitchCase="'multipla-escolha'" [pergunta]="pergunta"></pergunta-multipla-escolha>
