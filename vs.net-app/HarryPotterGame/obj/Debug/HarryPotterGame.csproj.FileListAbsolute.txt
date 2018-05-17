@@ -1,0 +1,9 @@
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\bin\Debug\HarryPotterGame.exe.config
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\bin\Debug\HarryPotterGame.exe
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\bin\Debug\HarryPotterGame.pdb
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.csprojResolveAssemblyReference.cache
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.Properties.Resources.resources
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.csproj.GenerateResource.Cache
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.exe
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.pdb
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.InitialForm.resources
