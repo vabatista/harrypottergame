@@ -27,6 +27,8 @@ namespace HarryPotterGame
         private int pontosEquipe1 = 0;
         private int pontosEquipe2 = 0;
 
+        private int pontuacaoJogo = 15;
+
         private List<Control> panelsPuzzle;
 
         public InitialForm()
@@ -53,7 +55,7 @@ namespace HarryPotterGame
                     timerLabel.ForeColor = Color.Red;
                 }
 
-                if (timeLeft % 2 == 0 && panelsPuzzle.Count > 0)
+                if (timeLeft % 3 == 0 && panelsPuzzle.Count > 0)
                 {
                     int idx = rnd.Next(panelsPuzzle.Count);
                     Control p = panelsPuzzle[idx];
@@ -80,20 +82,42 @@ namespace HarryPotterGame
 
         private void AvaliarResposta()
         {
-            DialogResult dialogResult = MessageBox.Show("A equipe acerto a resposta?", "Acertaram?", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER || currentQuestion.QuestionType == Question.QuestionTypeEnum.SCENE)
             {
-                if (currentTeam==1)
+                CarregaListaPaineis(false);
+            }
+            if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER)
+            {
+                DialogResult dialogResult = MessageBox.Show("A equipe Grifinólia quem acertou a resposta?", "Quem acertou?", MessageBoxButtons.YesNo);
+
+                if (dialogResult == DialogResult.Yes)
                 {
                     pontosEquipe1++;
                     txtPontosEquipe1.Text = pontosEquipe1.ToString();
-                } else
+                }
+                else
                 {
                     pontosEquipe2++;
                     txtPontosEquipe2.Text = pontosEquipe2.ToString();
                 }
             }
+            else
+            {
 
+                DialogResult dialogResult = MessageBox.Show("A equipe acertou a resposta?", "Acertaram?", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    if (currentTeam==1)
+                    {
+                        pontosEquipe1++;
+                        txtPontosEquipe1.Text = pontosEquipe1.ToString();
+                    } else
+                    {
+                        pontosEquipe2++;
+                        txtPontosEquipe2.Text = pontosEquipe2.ToString();
+                    }
+                }
+            }
             if (currentTeam == 1)
             {
                 currentTeam = 2;
@@ -108,12 +132,12 @@ namespace HarryPotterGame
             timerLabel.Visible = false;
             btMostrarResposta.Enabled = false;
 
-            if (pontosEquipe1 == 20)
+            if (pontosEquipe1 == pontuacaoJogo)
             {
                 MessageBox.Show("A Grifinólia é a campeã!", "Temos um vencedor", MessageBoxButtons.OK);
                 Application.Exit();
             } 
-            if (pontosEquipe2 == 20)
+            if (pontosEquipe2 == pontuacaoJogo)
             {
                 MessageBox.Show("A Sonserina é a campeã!", "Temos um vencedor", MessageBoxButtons.OK);
                 Application.Exit();
@@ -154,8 +178,13 @@ namespace HarryPotterGame
         private void SortearPergunta()
         {
             timeLeft = 60;
-
+            timerLabel.Text = "60";
             currentQuestion = questionFactoryInstance.ChooseNextQuestion();
+            if (currentQuestion == null)
+            {
+                MessageBox.Show("Acabaram as perguntas :-(", "Fim do Jogo",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
             txtPergunta.Text = currentQuestion.QuestionText;
             if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER || currentQuestion.QuestionType == Question.QuestionTypeEnum.SCENE)
             {
@@ -170,20 +199,35 @@ namespace HarryPotterGame
             txtPergunta.Visible = true;
             timerLabel.Visible = true;
             timerLabel.ForeColor = Color.Black;
-            if (currentTeam == 1)
+            txtPergunta.ForeColor = Color.Black;
+
+            if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER)
             {
                 txtEquipe1.BorderStyle = BorderStyle.FixedSingle;
-                
-                txtEquipe2.BorderStyle = BorderStyle.None;
-            } else
-            {
                 txtEquipe2.BorderStyle = BorderStyle.FixedSingle;
-                txtEquipe1.BorderStyle = BorderStyle.None;
+                txtEquipe1.BackColor = Color.Pink;
+                txtEquipe2.BackColor = Color.Pink;
+            }
+            else
+            {
+                if (currentTeam == 1)
+                {
+                    txtEquipe1.BorderStyle = BorderStyle.FixedSingle;
+                    txtEquipe1.BackColor = Color.Pink;
+                    txtEquipe2.BorderStyle = BorderStyle.None;
+                    txtEquipe2.BackColor = Color.White;
+                }
+                else
+                {
+                    txtEquipe2.BorderStyle = BorderStyle.FixedSingle;
+                    txtEquipe2.BackColor = Color.Pink;
+                    txtEquipe1.BorderStyle = BorderStyle.None;
+                    txtEquipe1.BackColor = Color.White;
+                }
             }
             timer.Start();
             btMostrarResposta.Enabled = true;
         }
-        
 
         private void CarregaListaPaineis(Boolean visivel)
         {
