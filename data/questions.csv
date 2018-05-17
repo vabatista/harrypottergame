@@ -92,7 +92,6 @@ ID;Type;Question;Answer;Img_path
 91;Aberta;Qual é o melhor remédio para um ataque de Dementadores?;Chocolate;
 92;Aberta;Qual o formato do Patrono de Harry?;Veado;
 93;Aberta;"Em ""Harry Potter e o Enigma do Príncipe"", em qual objeto o professor Horácio Slughorn estava disfarçado quando Dumbledore e Harry o encontram?";Sofá / Cadeira;
-94;Aberta;;;
 95;Cena;De qual filme é essa cena?;Harry Potter e o Cálice de Fogo;cena1.jpg
 96;Cena;De qual filme é essa cena?;Harry Potter e a Ordem da Fênix;cena2.jpg
 97;Personagem;Quem é esse personagem?;Rubeus Hagrid.;image001.jpg
@@ -136,3 +135,25 @@ ID;Type;Question;Answer;Img_path
 135;Personagem;Quem é esse personagem?;Peter Pettigrew;image020.jpg
 136;Personagem;Quem é esse personagem?;Dolores Umbridge;image022.jpg
 137;Personagem;Quem é esse personagem?;Alastor Moody;image021.jpg
+138;Cena;De qual filme é essa cena?;Harry Potter e a Pedra Filosofal;cena3.jpg
+139;Cena;De qual filme é essa cena?;Harry Potter e a Pedra Filosofal;cena4.jpg
+140;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 1;cena5.jpg
+141;Cena;De qual filme é essa cena?;Harry Potter e o Prisioneiro de Azkaban;cena6.jpg
+142;Cena;De qual filme é essa cena?;Harry Potter e o Cálice de Fogo;cena7.jpg
+143;Cena;De qual filme é essa cena?;Harry Potter e a Câmara Secreta;cena8.jpg
+144;Cena;De qual filme é essa cena?;Harry Potter e o Prisioneiro de Azkaban;cena9.jpg
+145;Cena;De qual filme é essa cena?;Harry Potter e o Cálice de Fogo;cena10.jpg
+146;Cena;De qual filme é essa cena?;Harry Potter e o Enígma do Príncipe;cena11.jpg
+147;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 1;cena12.jpg
+148;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 2;cena13.jpg
+149;Cena;De qual filme é essa cena?;Harry Potter e a Ordem da Fênix;cena14.jpg
+150;Cena;De qual filme é essa cena?;Harry Potter e o Cálice de Fogo;cena15.jpg
+151;Cena;De qual filme é essa cena?;Harry Potter e o Prisioneiro de Azkaban;cena16.jpg
+152;Cena;De qual filme é essa cena?;Harry Potter e o Enígma do Príncipe;cena17.jpg
+153;Cena;De qual filme é essa cena?;Harry Potter e o Prisioneiro de Azkaban;cena18.jpg
+154;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 2;cena19.jpg
+155;Cena;De qual filme é essa cena?;Harry Potter e a Câmara Secreta;cena20.jpg
+156;Cena;De qual filme é essa cena?;Harry Potter e a Câmara Secreta;cena21.jpg
+157;Cena;De qual filme é essa cena?;Harry Potter e a Pedra Filosofal;cena22.gif
+158;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 1;cena22.gif
+

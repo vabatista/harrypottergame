@@ -209,9 +209,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 726);
+            this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.btMostrarResposta);
             this.Controls.Add(this.imgPergunta);
-            this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPontosEquipe2);
             this.Controls.Add(this.label2);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace HarryPotterGame
 {
@@ -22,6 +23,7 @@ namespace HarryPotterGame
         private int currentTeam = 1;
         private int pontosEquipe1 = 0;
         private int pontosEquipe2 = 0;
+        private int alpha = 0;
 
         public InitialForm()
         {
@@ -30,12 +32,6 @@ namespace HarryPotterGame
             questionFactoryInstance = new QuestionFactory(@"E:\Vitor\harrypottergame\data\questions.csv");
             questionFactoryInstance.LoadQuestions();
 
-            //Question q = questionFactoryInstance.ChooseNextQuestion();
-            //while (q != null)
-            //{
-            //    Console.WriteLine("{0} {1} ", q.Id, q.QuestionText);
-            //    q = questionFactoryInstance.ChooseNextQuestion();
-            //}
             timer.Interval = 1000;
             
 
@@ -45,19 +41,28 @@ namespace HarryPotterGame
         {
             if (timeLeft > 0)
             {
-                // Display the new time left
-                // by updating the Time Left label.
                 timeLeft = timeLeft - 1;
                 timerLabel.Text = timeLeft.ToString();
                 if (timeLeft<10)
                 {
                     timerLabel.ForeColor = Color.Red;
                 }
+                //Image image = imgPergunta.Image;
+                //alpha = alpha - 5;
+                //if (image != null && alpha > 0)
+                //{
+                //    using (Graphics g = Graphics.FromImage(image))
+                //    {
+                //        Pen pen = new Pen(Color.FromArgb(alpha, 255, 255, 255), image.Width);
+                //        g.DrawLine(pen, -1, -1, image.Width, image.Height);
+                //        g.Save();
+                //    }
+                //    imgPergunta.Image = image;
+                //}
             }
             else
             {
-                // If the user ran out of time, stop the timer, show
-                // a MessageBox, and fill in the answers.
+                timer.Stop();
                 MostrarResposta();
             }
         }
@@ -121,7 +126,8 @@ namespace HarryPotterGame
             participantes.Add("Gabriela Delacour");
             participantes.Add("Gabriel Weasley");
             participantes.Add("João Potter");
-
+            txtEquipe1.Text = "";
+            txtEquipe2.Text = "";
             Random rnd = new Random();
             int i = 0;
             while (participantes.Count > 0)
@@ -148,7 +154,7 @@ namespace HarryPotterGame
 
             currentQuestion = questionFactoryInstance.ChooseNextQuestion();
             txtPergunta.Text = currentQuestion.QuestionText;
-
+            alpha = 180;
             if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER)
             {
                 imgPergunta.Image = Image.FromFile(currentQuestion.ImagePath);
