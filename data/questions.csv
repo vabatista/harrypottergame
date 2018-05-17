@@ -104,7 +104,7 @@ ID;Type;Question;Answer;Img_path
 104;Personagem;Quem é esse personagem?;Fleur Delacour;image038.jpg
 105;Personagem;Quem é esse personagem?;Bill Weasley;image005.jpg
 106;Personagem;Quem é esse personagem?;Seamus Finnigan;image037.jpg
-107;Personagem;Quem é esse personagem?;Sr. Ollivander;image006.jpg
+107;Personagem;Quem é esse personagem?;Sr. Olivaras;image006.jpg
 108;Personagem;Quem é esse personagem?;Kingsley Shacklebolt;image036.jpg
 109;Personagem;Quem é esse personagem?;Barty Crouch Jr;image007.jpg
 110;Personagem;Quem é esse personagem?;Lord Voldemort;image035.jpg
@@ -155,5 +155,31 @@ ID;Type;Question;Answer;Img_path
 155;Cena;De qual filme é essa cena?;Harry Potter e a Câmara Secreta;cena20.jpg
 156;Cena;De qual filme é essa cena?;Harry Potter e a Câmara Secreta;cena21.jpg
 157;Cena;De qual filme é essa cena?;Harry Potter e a Pedra Filosofal;cena22.gif
-158;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 1;cena22.gif
-
+158;Cena;De qual filme é essa cena?;Harry Potter e as Relíquias da Morte - Parte 1;cena23.gif
+159;Cena;De qual filme é essa cena?;Harry Potter e a Ordem da Fênix;cena24.gif
+160;Cena;De qual filme é essa cena?;Harry Potter e a Pedra Filosofal;cena25.gif
+161;Aberta;Em Harry Potter e a Câmara Secreta, em qual festa de aniversário Harry, Ron e Hermione vão?;Nick quase sem Cabeça;
+162;Aberta;Qual o patrono de Luna Lovegood?;Coelho/Lebre;
+163;Aberta;Em Harry Potter e a Câmara Secreta, qual feitiço é usado para salvar Hermione do troll, no banheiro?;Wingardium leviosa;
+164;Aberta;De qual crime Hagrid foi acusado e mandado para Azkaban?;Abrir a câmara secreta;
+165;Aberta;Qual forma o bicho papão de Neville Longbottom tomou?;Do Professor Snape;
+166;Aberta;Qual forma o bicho papão do Harry Potter tomou?;De um dementador;
+167;Aberta;Quantos pontos valem para o time que pegar o pomo de ouro no quadribol?;150 pontos;
+168;Aberta;No segundo ano, Harry e Ron perderam o trem para Hogwards. Como eles foram para a escola?;Voando em um carro;
+169;Aberta;Qual a posição do Harry Potter no quadribol?;Apanhador;
+170;Aberta;Quando Harry Potter entrou para o time de quadribol, quem era o capitão da Grifinória?;Oliver Wood;
+171;Aberta;Quais os dizeres limpam o Mapa Maroto?;Malfeito feito;
+172;Aberta;Qual o apelido de Sirius Black?;Almofadinhas;
+173;Aberta;Qual o apelido de Pedro Pettigrew?;Rabicho;
+174;Aberta;Quem foi buscar Harry quando ele estava com idade suficiente para ir para Hogwards?;Hagrid;
+175;Aberta;O que os tios de Harry Potter dão a ele todo Natal?Uma blusa de frio;
+176;Aberta;Onde a Armada Dumbledore se reunia secretamente?;Na sala precisa;
+177;Aberta;O que o feitiço Wingardium Leviosa faz?;Levita objetos/pessoas;
+178;Aberta;Com qual tipo de animal Harry Potter pode conversar?;Cobras;
+179;Aberta;Quais criaturas mágicas vigiam Azkaban?;Os dementadores;
+180;Aberta;Como são chamados os seguidores de Lord Voldemort?;Començais da Morte;
+181;Aberta;Como Draco Malfoy chama Hermione?;Sangue ruim;
+182;Aberta;Que criatura mágica está escondida na Câmara Secreta?;O basilisco;
+183;Aberta;A varinha de Harry Potter é irmã da varinha de quem?;Lord Voldemort;
+184;Aberta;Com qual peça do Xadrez Ron Weasley joga em Harry Potter e a Pedra filosofal?;Cavalo;
+185;Aberta;De acordo com a lenda, quem pode abrir a Câmara Secreta?;O Herdeiro de Sonserina;

@@ -46,6 +46,24 @@
             this.txtResposta = new System.Windows.Forms.Label();
             this.imgPergunta = new System.Windows.Forms.PictureBox();
             this.btMostrarResposta = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPergunta)).BeginInit();
@@ -60,7 +78,7 @@
             // 
             this.timerLabel.AutoSize = true;
             this.timerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerLabel.Location = new System.Drawing.Point(501, 156);
+            this.timerLabel.Location = new System.Drawing.Point(521, 156);
             this.timerLabel.Name = "timerLabel";
             this.timerLabel.Size = new System.Drawing.Size(64, 46);
             this.timerLabel.TabIndex = 0;
@@ -69,7 +87,7 @@
             // 
             // btIniciarJogo
             // 
-            this.btIniciarJogo.Location = new System.Drawing.Point(253, 10);
+            this.btIniciarJogo.Location = new System.Drawing.Point(299, 10);
             this.btIniciarJogo.Name = "btIniciarJogo";
             this.btIniciarJogo.Size = new System.Drawing.Size(148, 40);
             this.btIniciarJogo.TabIndex = 1;
@@ -80,7 +98,7 @@
             // btSortear
             // 
             this.btSortear.Enabled = false;
-            this.btSortear.Location = new System.Drawing.Point(429, 9);
+            this.btSortear.Location = new System.Drawing.Point(475, 9);
             this.btSortear.Name = "btSortear";
             this.btSortear.Size = new System.Drawing.Size(145, 41);
             this.btSortear.TabIndex = 2;
@@ -196,7 +214,7 @@
             // btMostrarResposta
             // 
             this.btMostrarResposta.Enabled = false;
-            this.btMostrarResposta.Location = new System.Drawing.Point(596, 9);
+            this.btMostrarResposta.Location = new System.Drawing.Point(642, 9);
             this.btMostrarResposta.Name = "btMostrarResposta";
             this.btMostrarResposta.Size = new System.Drawing.Size(145, 41);
             this.btMostrarResposta.TabIndex = 14;
@@ -204,12 +222,174 @@
             this.btMostrarResposta.UseVisualStyleBackColor = true;
             this.btMostrarResposta.Click += new System.EventHandler(this.btMostrarResposta_Click);
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel16.Location = new System.Drawing.Point(787, 435);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(116, 109);
+            this.panel16.TabIndex = 68;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel17.Location = new System.Drawing.Point(787, 321);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(116, 116);
+            this.panel17.TabIndex = 67;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel18.Location = new System.Drawing.Point(787, 201);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(116, 124);
+            this.panel18.TabIndex = 66;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel13.Location = new System.Drawing.Point(671, 435);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(116, 109);
+            this.panel13.TabIndex = 65;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel14.Location = new System.Drawing.Point(671, 321);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(116, 116);
+            this.panel14.TabIndex = 64;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel15.Location = new System.Drawing.Point(671, 201);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(116, 124);
+            this.panel15.TabIndex = 63;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel10.Location = new System.Drawing.Point(555, 435);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(116, 109);
+            this.panel10.TabIndex = 62;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel11.Location = new System.Drawing.Point(555, 321);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(116, 116);
+            this.panel11.TabIndex = 61;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel12.Location = new System.Drawing.Point(555, 201);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(116, 124);
+            this.panel12.TabIndex = 60;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel7.Location = new System.Drawing.Point(439, 435);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(116, 109);
+            this.panel7.TabIndex = 59;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel8.Location = new System.Drawing.Point(439, 321);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(116, 116);
+            this.panel8.TabIndex = 58;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel9.Location = new System.Drawing.Point(439, 201);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(116, 124);
+            this.panel9.TabIndex = 57;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel4.Location = new System.Drawing.Point(323, 435);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(116, 109);
+            this.panel4.TabIndex = 56;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel5.Location = new System.Drawing.Point(323, 321);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(116, 116);
+            this.panel5.TabIndex = 55;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Location = new System.Drawing.Point(206, 435);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(116, 109);
+            this.panel3.TabIndex = 53;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel6.Location = new System.Drawing.Point(323, 201);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(116, 124);
+            this.panel6.TabIndex = 54;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(206, 321);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(116, 116);
+            this.panel2.TabIndex = 52;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(206, 201);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(116, 124);
+            this.panel1.TabIndex = 51;
+            // 
             // InitialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 726);
             this.Controls.Add(this.txtResposta);
+            this.Controls.Add(this.panel16);
+            this.Controls.Add(this.panel17);
+            this.Controls.Add(this.panel18);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btMostrarResposta);
             this.Controls.Add(this.imgPergunta);
             this.Controls.Add(this.label3);
@@ -252,6 +432,24 @@
         private System.Windows.Forms.Label txtResposta;
         private System.Windows.Forms.PictureBox imgPergunta;
         private System.Windows.Forms.Button btMostrarResposta;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

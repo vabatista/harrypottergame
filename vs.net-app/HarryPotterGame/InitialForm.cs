@@ -17,13 +17,17 @@ namespace HarryPotterGame
     public partial class InitialForm : Form
     {
         private static QuestionFactory questionFactoryInstance;
+        private static Random rnd = new Random();
+
         private int timeLeft = 60;
         private Question currentQuestion;
+        
 
         private int currentTeam = 1;
         private int pontosEquipe1 = 0;
         private int pontosEquipe2 = 0;
-        private int alpha = 0;
+
+        private List<Control> panelsPuzzle;
 
         public InitialForm()
         {
@@ -33,7 +37,8 @@ namespace HarryPotterGame
             questionFactoryInstance.LoadQuestions();
 
             timer.Interval = 1000;
-            
+
+            CarregaListaPaineis(false);
 
         }
 
@@ -47,22 +52,20 @@ namespace HarryPotterGame
                 {
                     timerLabel.ForeColor = Color.Red;
                 }
-                //Image image = imgPergunta.Image;
-                //alpha = alpha - 5;
-                //if (image != null && alpha > 0)
-                //{
-                //    using (Graphics g = Graphics.FromImage(image))
-                //    {
-                //        Pen pen = new Pen(Color.FromArgb(alpha, 255, 255, 255), image.Width);
-                //        g.DrawLine(pen, -1, -1, image.Width, image.Height);
-                //        g.Save();
-                //    }
-                //    imgPergunta.Image = image;
-                //}
+
+                if (timeLeft % 2 == 0 && panelsPuzzle.Count > 0)
+                {
+                    int idx = rnd.Next(panelsPuzzle.Count);
+                    Control p = panelsPuzzle[idx];
+                    p.Visible = false;
+                    panelsPuzzle.RemoveAt(idx);
+                }
+
             }
             else
             {
                 timer.Stop();
+
                 MostrarResposta();
             }
         }
@@ -154,15 +157,15 @@ namespace HarryPotterGame
 
             currentQuestion = questionFactoryInstance.ChooseNextQuestion();
             txtPergunta.Text = currentQuestion.QuestionText;
-            alpha = 180;
-            if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER)
+            if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER || currentQuestion.QuestionType == Question.QuestionTypeEnum.SCENE)
             {
                 imgPergunta.Image = Image.FromFile(currentQuestion.ImagePath);
                 imgPergunta.Visible = true;
-            } else if (currentQuestion.QuestionType == Question.QuestionTypeEnum.SCENE)
+
+                CarregaListaPaineis(true);
+            } else
             {
-                imgPergunta.Image = Image.FromFile(currentQuestion.ImagePath);
-                imgPergunta.Visible = true;
+                CarregaListaPaineis(false);
             }
             txtPergunta.Visible = true;
             timerLabel.Visible = true;
@@ -170,6 +173,7 @@ namespace HarryPotterGame
             if (currentTeam == 1)
             {
                 txtEquipe1.BorderStyle = BorderStyle.FixedSingle;
+                
                 txtEquipe2.BorderStyle = BorderStyle.None;
             } else
             {
@@ -180,6 +184,35 @@ namespace HarryPotterGame
             btMostrarResposta.Enabled = true;
         }
         
+
+        private void CarregaListaPaineis(Boolean visivel)
+        {
+            panelsPuzzle = new List<Control>();
+            panelsPuzzle.Add(panel1);
+            panelsPuzzle.Add(panel2);
+            panelsPuzzle.Add(panel3);
+            panelsPuzzle.Add(panel4);
+            panelsPuzzle.Add(panel5);
+            panelsPuzzle.Add(panel6);
+            panelsPuzzle.Add(panel7);
+            panelsPuzzle.Add(panel8);
+            panelsPuzzle.Add(panel9);
+            panelsPuzzle.Add(panel10);
+            panelsPuzzle.Add(panel11);
+            panelsPuzzle.Add(panel12);
+            panelsPuzzle.Add(panel13);
+            panelsPuzzle.Add(panel14);
+            panelsPuzzle.Add(panel15);
+            panelsPuzzle.Add(panel16);
+            panelsPuzzle.Add(panel17);
+            panelsPuzzle.Add(panel18);
+            foreach (Control p in panelsPuzzle)
+            {
+                p.Visible = visivel;
+            }
+            
+        }
+
         private void IniciarJogo()
         {
             SortearEquipes();
