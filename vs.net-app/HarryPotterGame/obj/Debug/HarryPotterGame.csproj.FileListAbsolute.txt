@@ -7,5 +7,4 @@ E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.cs
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.exe
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.pdb
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.InitialForm.resources
-E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.MainForm.resources
-E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.Form1.resources
+E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Debug\HarryPotterGame.Who.resources

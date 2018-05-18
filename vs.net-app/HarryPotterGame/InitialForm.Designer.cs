@@ -87,6 +87,7 @@
             // 
             // btIniciarJogo
             // 
+            this.btIniciarJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIniciarJogo.Location = new System.Drawing.Point(299, 10);
             this.btIniciarJogo.Name = "btIniciarJogo";
             this.btIniciarJogo.Size = new System.Drawing.Size(148, 40);
@@ -98,6 +99,7 @@
             // btSortear
             // 
             this.btSortear.Enabled = false;
+            this.btSortear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSortear.Location = new System.Drawing.Point(475, 9);
             this.btSortear.Name = "btSortear";
             this.btSortear.Size = new System.Drawing.Size(145, 41);
@@ -193,10 +195,10 @@
             // 
             // txtResposta
             // 
-            this.txtResposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResposta.Location = new System.Drawing.Point(180, 533);
+            this.txtResposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResposta.Location = new System.Drawing.Point(185, 540);
             this.txtResposta.Name = "txtResposta";
-            this.txtResposta.Size = new System.Drawing.Size(774, 71);
+            this.txtResposta.Size = new System.Drawing.Size(774, 127);
             this.txtResposta.TabIndex = 12;
             this.txtResposta.Text = "Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ";
             this.txtResposta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -216,6 +218,7 @@
             // btMostrarResposta
             // 
             this.btMostrarResposta.Enabled = false;
+            this.btMostrarResposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMostrarResposta.Location = new System.Drawing.Point(642, 9);
             this.btMostrarResposta.Name = "btMostrarResposta";
             this.btMostrarResposta.Size = new System.Drawing.Size(145, 41);
@@ -372,7 +375,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 726);
+            this.ClientSize = new System.Drawing.Size(1119, 676);
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);

@@ -19,6 +19,8 @@ namespace HarryPotterGame
         private static QuestionFactory questionFactoryInstance;
         private static Random rnd = new Random();
 
+        public static int whoAnsweredCorrect = 0;
+
         private int timeLeft = 60;
         private Question currentQuestion;
         
@@ -35,7 +37,7 @@ namespace HarryPotterGame
         {
             InitializeComponent();
 
-            questionFactoryInstance = new QuestionFactory(@"E:\Vitor\harrypottergame\data\questions.csv");
+            questionFactoryInstance = new QuestionFactory(@"c:\temp\questions.csv");
             questionFactoryInstance.LoadQuestions();
 
             timer.Interval = 1000;
@@ -82,20 +84,23 @@ namespace HarryPotterGame
 
         private void AvaliarResposta()
         {
+            
             if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER || currentQuestion.QuestionType == Question.QuestionTypeEnum.SCENE)
             {
                 CarregaListaPaineis(false);
             }
             if (currentQuestion.QuestionType == Question.QuestionTypeEnum.CHARACTER)
             {
-                DialogResult dialogResult = MessageBox.Show("A equipe Grifinólia quem acertou a resposta?", "Quem acertou?", MessageBoxButtons.YesNo);
+                Who frm = new Who();
+                frm.ShowDialog(this);
+                frm.Dispose();
 
-                if (dialogResult == DialogResult.Yes)
+                if (whoAnsweredCorrect == 1)
                 {
                     pontosEquipe1++;
                     txtPontosEquipe1.Text = pontosEquipe1.ToString();
                 }
-                else
+                else if (whoAnsweredCorrect == 2)
                 {
                     pontosEquipe2++;
                     txtPontosEquipe2.Text = pontosEquipe2.ToString();
@@ -131,6 +136,8 @@ namespace HarryPotterGame
             imgPergunta.Visible = false;
             timerLabel.Visible = false;
             btMostrarResposta.Enabled = false;
+            btSortear.Enabled = true;
+            
 
             if (pontosEquipe1 == pontuacaoJogo)
             {
@@ -142,6 +149,7 @@ namespace HarryPotterGame
                 MessageBox.Show("A Sonserina é a campeã!", "Temos um vencedor", MessageBoxButtons.OK);
                 Application.Exit();
             }
+            
         }
 
         private void SortearEquipes()
@@ -207,6 +215,8 @@ namespace HarryPotterGame
                 txtEquipe2.BorderStyle = BorderStyle.FixedSingle;
                 txtEquipe1.BackColor = Color.Pink;
                 txtEquipe2.BackColor = Color.Pink;
+                btSortear.Enabled = false;
+                btMostrarResposta.Enabled = false;
             }
             else
             {
