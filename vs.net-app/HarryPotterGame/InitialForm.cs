@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace HarryPotterGame
 {
@@ -36,8 +37,8 @@ namespace HarryPotterGame
         public InitialForm()
         {
             InitializeComponent();
-
-            questionFactoryInstance = new QuestionFactory(@"c:\temp\questions.csv");
+            
+            questionFactoryInstance = new QuestionFactory(@"..\..\..\..\data\questions.csv");
             questionFactoryInstance.LoadQuestions();
 
             timer.Interval = 1000;
