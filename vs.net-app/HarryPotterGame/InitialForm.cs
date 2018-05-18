@@ -142,7 +142,7 @@ namespace HarryPotterGame
 
             if (pontosEquipe1 == pontuacaoJogo)
             {
-                MessageBox.Show("A Grifinólia é a campeã!", "Temos um vencedor", MessageBoxButtons.OK);
+                MessageBox.Show("A Grifinória é a campeã!", "Temos um vencedor", MessageBoxButtons.OK);
                 Application.Exit();
             } 
             if (pontosEquipe2 == pontuacaoJogo)
