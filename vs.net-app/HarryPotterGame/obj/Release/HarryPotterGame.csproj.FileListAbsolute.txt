@@ -8,3 +8,6 @@ E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.exe
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.pdb
 E:\Vitor\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.csprojResolveAssemblyReference.cache
+E:\harrypottergame\vs.net-app\HarryPotterGame\bin\Release\HarryPotterGame.exe.config
+E:\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.exe
+E:\harrypottergame\vs.net-app\HarryPotterGame\obj\Release\HarryPotterGame.pdb
